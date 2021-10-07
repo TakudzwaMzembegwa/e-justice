@@ -36,7 +36,6 @@
             android:id="@+id/button1"
             android:background="#ff123ff4"
             android:layout_gravity="bottom|left" />
-
         <Button
             android:text="Done"
             android:layout_width="wrap_content"
