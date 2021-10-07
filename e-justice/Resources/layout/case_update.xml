@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffffff"
+    android:minWidth="25px"
+    android:minHeight="25px">
+    <TextView
+        android:text="Case Updates"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/textView2"
+        android:layout_gravity="top|center_horizontal"
+        android:background="#fffc5d5d"
+        android:minWidth="45px"
+        android:minHeight="45px"/>
+    <TextView
+        android:text=""
+        android:layout_width="match_parent"
+        android:layout_height="535dp"
+        android:id="@+id/textView1"
+        android:background="#ff97d3ff" />
+    <GridLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/gridLayout1"
+        android:layout_gravity="bottom">
+        <Button
+            android:text="Clear"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:id="@+id/button1"
+            android:background="#ff123ff4"
+            android:layout_gravity="bottom|left" />
+
+        <Button
+            android:text="Done"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:id="@+id/button2"
+            android:background="#ff123ff4"
+            android:layout_gravity="bottom|right" />
+    </GridLayout>
+
+</LinearLayout>
