@@ -49,10 +49,9 @@ namespace EJustice.Views
         /*
         * RadioButton CheckChange Event Handler
         */
-        void onSubmit(object sender, EventArgs e)
+        async void onSubmit(object sender, EventArgs e)
         {
-            /**TODO
-             Action after submitting*/
+            await Navigation.PushAsync(new Page2());
         }
     }
 }
