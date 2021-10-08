@@ -14,9 +14,9 @@
                  />
 
             <Picker ItemDisplayBinding="{Binding CaseTypeName}" x:Name="caseOption" ItemsSource="{Binding CaseList}"/>
-            <Button Text="Select case" Clicked="btnSelect_Case"></Button>
+            <Button Text="Select case" Clicked="btnSelect_Case"/>
             <StackLayout x:Name="radioButtons" />
-            <Button Text="Submit" Clicked="onSubmit"/>
+            <Button Text="Submit" Clicked="onSubmit" VerticalOptions="EndAndExpand"  BackgroundColor="#ff123ff4"/>
         </StackLayout>
     </ContentPage.Content>
 </ContentPage>

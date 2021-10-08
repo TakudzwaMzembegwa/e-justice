@@ -6,7 +6,7 @@
     <ContentPage.Content>
         <StackLayout Padding="5,10">
 
-            <Editor      x:Name="caseEditor" BackgroundColor="#ff97d3ff" HeightRequest = "300"/>
+            <Editor      x:Name="caseEditor" BackgroundColor="#ff97d3ff"  VerticalOptions="Fill"/>
 
             <StackLayout Orientation="Horizontal" VerticalOptions="End">
 
