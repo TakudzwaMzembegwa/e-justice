@@ -30,6 +30,14 @@ namespace EJustice.Views
             int caseId = category.CaseTypeId;
             int i = 0;
             radioButtons.Children.Clear();
+            Label caseType = new Label()
+            {
+                Text = "Case Type",
+                FontAttributes = FontAttributes.Bold,
+                TextColor = Color.Black,
+                Margin = 5
+            };
+            radioButtons.Children.Add(caseType);
             foreach (String case1 in crime_category[caseId]){
                 RadioButton rb = new RadioButton() { Content = case1, IsChecked = i++ == 0 };
                 rb.CheckedChanged += radioSelected;

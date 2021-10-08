@@ -2,20 +2,21 @@
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" xmlns:local="clr-namespace:EJustice.ViewModel"
              x:Class="EJustice.Views.Page1"
-             Title="Case Classification">
+             Title="eJustice Case Classification"
+            >
     <ContentPage.BindingContext>
         <local:CaseViewModel></local:CaseViewModel>
     </ContentPage.BindingContext>
     <ContentPage.Content>
         <StackLayout>
-            <Button Text="Case Classification" Clicked="btnSelect_Case"/>
-            <Label Text="Select Case class"
-                   FontSize="20" 
-                 />
+            
+           
 
-            <Picker ItemDisplayBinding="{Binding CaseTypeName}" x:Name="caseOption" ItemsSource="{Binding CaseList}"/>
+            <Picker Margin="0,20,0,5" Title="Select Crime Category" ItemDisplayBinding="{Binding CaseTypeName}" x:Name="caseOption" ItemsSource="{Binding CaseList}"/>
             <Button Text="Select case" Clicked="btnSelect_Case"/>
+            
             <StackLayout x:Name="radioButtons" />
+            
             <Button Text="Submit" Clicked="onSubmit" VerticalOptions="EndAndExpand"  BackgroundColor="#ff123ff4"/>
         </StackLayout>
     </ContentPage.Content>
