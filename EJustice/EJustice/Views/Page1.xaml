@@ -1,0 +1,21 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" xmlns:local="clr-namespace:EJustice.ViewModel"
+             x:Class="EJustice.Views.Page1">
+    <ContentPage.BindingContext>
+        <local:CaseViewModel></local:CaseViewModel>
+    </ContentPage.BindingContext>
+    <ContentPage.Content>
+        <StackLayout>
+            <Button Text="Case Classification" Clicked="btnSelect_Case"/>
+            <Label Text="Select Case class"
+                   FontSize="20" 
+                 />
+
+            <Picker ItemDisplayBinding="{Binding CaseTypeName}" x:Name="caseOption" ItemsSource="{Binding CaseList}"/>
+            <Button Text="Select case" Clicked="btnSelect_Case"></Button>
+            <StackLayout x:Name="radioButtons" />
+            <Button Text="Submit" Clicked="onSubmit"/>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>
